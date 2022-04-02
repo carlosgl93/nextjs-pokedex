@@ -12,7 +12,8 @@ const MainImage: React.FC<Props> = ({ pokemon }) => {
       <Card.Body>
         <Card.Image
           src={
-            pokemon.sprites.other?.dream_world.front_default || "/no-image.png"
+            pokemon.sprites.other?.dream_world.front_default ||
+            pokemon.sprites.front_default
           }
           alt={pokemon.name}
           width="100%"
